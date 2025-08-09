@@ -1,0 +1,90 @@
+<!---
+Task
+Header[Name|Links(linkdin, github, instagram)]
+left Sidebar[Skills|About Me |Contact]
+Main[Portfolio|Experience|Education|Gallery]
+Rignt sidebar[Project |]
+Footer[Contact Me(form) | Copyright]
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+                <li><a href="https://github.com">GitHub</a></li>
+                <li><a href="https://www.instagram.com">Instagram</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="left-sidebar">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+            </ul>
+            <h2>About Me</h2>
+            <p>I am a web developer with a passion for creating interactive and user-friendly applications.</p>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:naniswini123@gmail.com">naniswini123@gmail.com</a></p>
+        </div>
+        <div class="main-content">
+            <section class="experience">
+                <h2>Experience</h2>
+                <p>I have worked on various projects in web development, including front-end and back-end technologies.</p>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <p>Bachelor's Degree in Computer Science from Anurag University.</p>
+            </section>
+
+            <section class="gallery">
+                <h2>Gallery</h2>
+                <img src="anurag-logo-2.png" alt="Anurag University Logo" >
+            </section>
+        </div>
+        <div class="right-sidebar">
+            <h2>Projects</h2>
+            <ul>
+                <li>Project 1: A web application for task management.</li>
+                <li>Project 2: An e-commerce site built with React.</li>
+                <li>Project 3: A personal blog using Node.js and Express.</li>
+            </ul>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <h2>Contact Me</h2>
+        <form >
+            <table align="center">
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="message">Message:</label></td>
+                    <td><textarea id="message" name="message" required></textarea></td>
+                </tr>
+            </table>
+            <button type="submit">Send</button>
+        </form>
+        <p>&copy; Manohar Sai Chappati. All rights reserved.</p>
+    </footer>
