@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body style="height: 300%;">
+
+    <h1>Day 2</h1>
+
+    <!-- <form>
+        <fieldset>
+            <legend>Name</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname">
+            <br>
+            <br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname">
+        </fieldset>
+        <fieldset>
+            <legend>Course Info</legend>
+                <label for="course">Course</label>
+                <select name="course" id="course">
+                    <option value="1">Frontend</option>
+                    <option value="2">Backend</option>
+                    <option value="3">Fullstack</option>
+                </select>
+            <br>
+            <label for="Skills"> Skills to master</label>
+            <select name="Skills" id="Skills">
+                <option>--Select--</option>
+                <optgroup label="Frontend Skills">
+                    <option value="1">HTML</option>
+                    <option value="2">CSS</option>
+                    <option value="3">JavaScript</option>
+                    <option value="4">React</option>
+                </optgroup>
+                <optgroup label="Backend Skills">
+                    <option value="5">MongoDB</option>
+                    <option value="6">Node.js</option>
+                    <option value="7">Express.js</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Feedback</legend>
+            <textarea clos="10" rows="10" name="SpecialRequest" ></textarea>
+        </fieldset>
+        <label for="tshirtColor">Color for tshirt</label>
+        <input type="color" name="tshirtColor" id="tshirtColor">
+        <br>
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob">
+        <br>
+        <label for="datetime">Preferred time</label>
+        <input type="datetime-local" name="datetime" id="datetime">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type="checkbox" name="subscribe" id="subscribe" value="yes">
+        <label for="subscribe">Subscribe</label>
+        <br>
+        <input type="radio" name="contact" id="email" value="email">
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form> -->
+
+    <form>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Account Info</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Preferences</legend>
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select</option>
+            <option value="frontend">Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="fullstack">Fullstack</option>
+        </select><br><br>
+
+        <label for="skills">Skills to master:</label>
+        <select id="skills" name="skills">
+            <option value="">--Select--</option>
+            <optgroup label="Frontend Skills">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="react">React</option>
+            </optgroup>
+            <optgroup label="Backend Skills">
+                <option value="mongodb">MongoDB</option>
+                <option value="nodejs">Node.js</option>
+                <option value="expressjs">Express.js</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="color">T-shirt Color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <label>Contact Method:</label>
+        <input type="radio" id="contact_email" name="contact" value="email">
+        <label for="contact_email">Email</label>
+        <input type="radio" id="contact_phone" name="contact" value="phone">
+        <label for="contact_phone">Phone</label><br><br>
+
+        <label for="appt">Preferred Contact Time:</label>
+        <input type="datetime-local" id="appt" name="appt"><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+        <label for="subscribe">Subscribe to updates</label><br><br>
+
+        <label for="feedback">Feedback / Special Request:</label><br>
+        <textarea id="feedback" name="feedback" cols="30" rows="4"></textarea>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+
+</body>
+</html>

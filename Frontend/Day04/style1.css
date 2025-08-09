@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    text-align: center;
+}
+
+
+header ,footer{
+    background-color: aqua;
+    text-align: center;
+}
+
+.column1{
+    width: 25%;
+    background-color: lightcoral;
+}
+
+.column2{
+    width: 60%;
+    background-color: greenyellow;
+}
+
+.column3{
+    width: 15%;
+    background-color: orange;
+}

@@ -1,0 +1,31 @@
+h1{
+    font-family: sans-serif;
+    font-size: 42px;
+    color: blue;
+}
+p {
+    font-size: 18px;
+    color: green;
+}
+table {
+    border-spacing: 90px;
+}
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+}
+th {
+    background-color: greenyellow;
+}
+tr{
+    background-color: yellow;
+}
+table{
+    margin-left: 20px;
+}
+th, tr{
+    padding: 10px;
+}
+tr:hover {
+    background-color: lightblue;
+}
