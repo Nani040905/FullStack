@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Webpage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header class="main-header">
+            <div class="nav-flex">
+                <div class="logo-area">
+                    <h1>Manohar Sai Chappati</h1>
+                    <h2>Web Developer &amp; Designer</h2>
+                </div>
+                <nav class="main-nav">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+    <main>
+        <section id="about" class="about-flex">
+            <div class="about-card about-img-card">
+                <img class="profile" src="IMG20250302222009_gxdphr.jpg" alt="profile pic" width="350px" height="400px">
+            </div>
+            <div class="about-card about-text-card">
+                <h3>About Me</h3>
+                <p>I am <strong>Manohar Sai Chappati</strong>, a Computer Science and Engineering student at Anurag University with a CGPA of 9.17. 
+                    I have a strong foundation in programming languages such as <small>C, C++, Java, and Python</small>, along with skills in databases like SQL and MongoDB. 
+                    I’ve applied these skills in practical projects, including a student record management system and a feature-rich desktop chatbot developed during the <em>VISONAVA 2K25 Hackathon</em>, which included translation, summarization, and text-to-speech functionality. 
+                    My commitment to continuous learning is reflected in multiple certifications and my active problem-solving on platforms like <mark>HackerRank, LeetCode, and CodeChef</mark>, where I’ve solved 350+ coding challenges. 
+                    I am a dedicated team player with strong communication, time management, and adaptability skills, looking forward to contributing to innovative and impactful tech solutions.
+                </p>
+                <p>Here is my <a href="resume.pdf" target="_blank">resume</a>.</p>
+            </div>
+        </section>
+                <section id="skills">
+                    <h3>Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <h4>HTML</h4>
+                            <p>Markup language for web pages.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>CSS</h4>
+                            <p>Styling and layout for web pages.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>JavaScript</h4>
+                            <p>Programming for interactivity and logic.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Python</h4>
+                            <p>General-purpose programming and backend.</p>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Frontend Skills</h4>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Backend Skills</h4>
+                            <ul>
+                                <li>Python</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </div>
+                        <div class="skill-card">
+                            <h4>Development Process</h4>
+                            <ol>
+                                <li>Think of idea</li>
+                                <li>Write code</li>
+                                <li>Test website</li>
+                                <li>Show to friends</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+        <section id="projects">
+            <h3>My Projects</h3>
+            <table>
+                <caption>Project List</caption>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Technology Used</th>
+                    <th>Completion Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Basic Portfolio</td>
+                    <td>HTML, CSS</td>
+                    <td>April 2025</td>
+                    <td>Done</td>
+                </tr>
+            </table>
+            <br>
+            <video width="320" height="180" controls>
+                <source src="anurag-video-tour.mp4" type="video/mp4">
+            </video>
+            <audio src="https://www.w3schools.com/html/horse.mp3" muted autoplay loop></audio>
+            <br>
+            <img src="anurag-logo-2.png" alt="Project screenshot" width="300">
+        </section>
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <form>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <label for="ptype">Project Type:</label>
+                    <select id="ptype" name="ptype">
+                        <option>Web Design</option>
+                        <option>Web Development</option>
+                        <option>SEO</option>
+                        <option>Other</option>
+                    </select><br>
+                    <span>Budget:</span><br>
+                    <input type="radio" id="b1" name="budget" value="500-1000">
+                    <label for="b1">$500-1000</label>
+                    <input type="radio" id="b2" name="budget" value="1000-5000">
+                    <label for="b2">$1000-5000</label>
+                    <input type="radio" id="b3" name="budget" value="5000+">
+                    <label for="b3">$5000+</label><br>
+                    <span>Services Needed:</span><br>
+                    <input type="checkbox" id="s1" name="services" value="uiux">
+                    <label for="s1">UI/UX Design</label>
+                    <input type="checkbox" id="s2" name="services" value="frontend">
+                    <label for="s2">Front-End</label>
+                    <input type="checkbox" id="s3" name="services" value="backend">
+                    <label for="s3">Back-End</label><br>
+                    <label for="desc">Project Description:</label><br>
+                    <textarea id="desc" name="desc" rows="4" cols="30" placeholder="Describe your project..."></textarea><br>
+                    <label for="timeline">Project Timeline (months):</label>
+                    <input type="range" id="timeline" name="timeline" min="1" max="12" value="3"><br>
+                    <label for="start">Preferred Start Date:</label>
+                    <input type="date" id="start" name="start"><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

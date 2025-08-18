@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My simple web page for assignment">
+    <meta name="keywords" content="web, html, css, project, assignment">
+    <title>Alex's Webpage</title>
+</head>
+<body>
+    <style>
+        body { background: #f4f8fb; font-family: Arial, sans-serif; margin: 0; }
+        header { background: #1976d2; color: #fff; padding: 20px 0 10px 0; text-align: center; }
+        nav { margin: 10px 0; }
+        nav a { color: #fff; text-decoration: none; margin: 0 10px; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        main { max-width: 800px; margin: 30px auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 24px; }
+        section { margin-bottom: 32px; }
+        h1 { margin-bottom: 0; }
+        h2 { margin-top: 8px; color: #e3f2fd; font-size: 1.3em; }
+        h3 { color: #1976d2; }
+        img.profile { border-radius: 50%; border: 2px solid #1976d2; margin-bottom: 10px; }
+        table { border-collapse: collapse; width: 100%; background: #fafafa; }
+        th, td { border: 1px solid #bdbdbd; padding: 8px 10px; text-align: left; }
+        th { background: #1976d2; color: #fff; }
+        caption { font-weight: bold; margin-bottom: 6px; }
+        form { background: #e3f2fd; padding: 18px; border-radius: 8px; }
+        fieldset { border: 1px solid #1976d2; border-radius: 6px; margin-bottom: 16px; }
+        legend { color: #1976d2; font-weight: bold; }
+        label { display: inline-block; min-width: 120px; margin-bottom: 6px; }
+        input, select, textarea { margin-bottom: 10px; border-radius: 4px; border: 1px solid #bdbdbd; padding: 6px; }
+        input[type="submit"], input[type="reset"] { background: #1976d2; color: #fff; border: none; padding: 8px 18px; margin-right: 8px; cursor: pointer; }
+        input[type="submit"]:hover, input[type="reset"]:hover { background: #1565c0; }
+        footer { text-align: center; color: #888; margin: 30px 0 10px 0; }
+    </style>
+    <header>
+        <h1>Alex Mercer</h1>
+        <h2>Web Developer &amp; Designer</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h3>About Me</h3>
+            <img class="profile" src="https://placehold.co/180x180" alt="profile pic" width="120" height="120">
+            <p>Hello! My name is <strong>Alex Mercer</strong>. I am learning web development. I like to <em>code</em> and make websites. <mark>I want to be a good developer.</mark></p>
+            <p>I started coding last year. I know some HTML and CSS. I am trying to learn JavaScript too.</p>
+            <p>I like to play games and watch movies. <small>This is just a practice website for my assignment.</small></p>
+            <p>Here is my <a href="https://example.com/resume.pdf" target="_blank">resume</a>.</p>
+        </section>
+        <section id="skills">
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+            <ol>
+                <li>Think of idea</li>
+                <li>Write code</li>
+                <li>Test website</li>
+                <li>Show to friends</li>
+            </ol>
+            <ul>
+                <li>Frontend Skills
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </li>
+                <li>Backend Skills
+                    <ul>
+                        <li>Python</li>
+                        <li>Node.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h3>My Projects</h3>
+            <table>
+                <caption>Project List</caption>
+                <tr>
+                    <th>Project Name</th>
+                    <th>Technology Used</th>
+                    <th>Completion Date</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>Calculator</td>
+                    <td>HTML, JavaScript</td>
+                    <td>Jan 2025</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Weather App</td>
+                    <td>HTML, CSS, API</td>
+                    <td>Feb 2025</td>
+                    <td>Done</td>
+                </tr>
+                <tr>
+                    <td>Blog</td>
+                    <td>HTML, CSS</td>
+                    <td>Mar 2025</td>
+                    <td>Ongoing</td>
+                </tr>
+                <tr>
+                    <td>Game</td>
+                    <td>JavaScript</td>
+                    <td>Apr 2025</td>
+                    <td>Planned</td>
+                </tr>
+            </table>
+            <br>
+            <video width="320" height="180" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <audio src="https://www.w3schools.com/html/horse.mp3" muted autoplay loop></audio>
+            <br>
+            <img srcset="https://placehold.co/400x300 400w, https://placehold.co/800x600 800w" src="https://placehold.co/400x300" alt="Project screenshot" width="300">
+        </section>
+        <section id="contact">
+            <h3>Contact Me</h3>
+            <form>
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Project Details</legend>
+                    <label for="ptype">Project Type:</label>
+                    <select id="ptype" name="ptype">
+                        <option>Web Design</option>
+                        <option>Web Development</option>
+                        <option>SEO</option>
+                        <option>Other</option>
+                    </select><br>
+                    <span>Budget:</span><br>
+                    <input type="radio" id="b1" name="budget" value="500-1000">
+                    <label for="b1">$500-1000</label>
+                    <input type="radio" id="b2" name="budget" value="1000-5000">
+                    <label for="b2">$1000-5000</label>
+                    <input type="radio" id="b3" name="budget" value="5000+">
+                    <label for="b3">$5000+</label><br>
+                    <span>Services Needed:</span><br>
+                    <input type="checkbox" id="s1" name="services" value="uiux">
+                    <label for="s1">UI/UX Design</label>
+                    <input type="checkbox" id="s2" name="services" value="frontend">
+                    <label for="s2">Front-End</label>
+                    <input type="checkbox" id="s3" name="services" value="backend">
+                    <label for="s3">Back-End</label><br>
+                    <label for="desc">Project Description:</label><br>
+                    <textarea id="desc" name="desc" rows="4" cols="30" placeholder="Describe your project..."></textarea><br>
+                    <label for="timeline">Project Timeline (months):</label>
+                    <input type="range" id="timeline" name="timeline" min="1" max="12" value="3"><br>
+                    <label for="start">Preferred Start Date:</label>
+                    <input type="date" id="start" name="start"><br>
+                </fieldset>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Alex Mercer. This is for assignment.</p>
+    </footer>
+</body>
+</html>
