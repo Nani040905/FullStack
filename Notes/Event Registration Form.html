@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form>
+        <!-- Personal Information Fieldset -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+        </fieldset>
+
+        <!-- Event Details Fieldset -->
+        <fieldset>
+            <legend>Event Details</legend>
+            <label for="eventType">Event Type:</label>
+            <select id="eventType" name="eventType">
+                <option value="">--Select Event--</option>
+                <option value="workshop">Workshop</option>
+                <option value="seminar">Seminar</option>
+                <option value="competition">Competition</option>
+            </select><br><br>
+
+            <label for="session">Session:</label>
+            <select id="session" name="session">
+                <optgroup label="Morning">
+                    <option value="session1">Session 1 (9am-11am)</option>
+                    <option value="session2">Session 2 (11am-1pm)</option>
+                </optgroup>
+                <optgroup label="Afternoon">
+                    <option value="session3">Session 3 (2pm-4pm)</option>
+                    <option value="session4">Session 4 (4pm-6pm)</option>
+                </optgroup>
+            </select><br><br>
+
+            <label for="attendance">Will you attend in person?</label>
+            <input type="radio" id="inperson" name="attendance" value="inperson">
+            <label for="inperson">Yes</label>
+            <input type="radio" id="virtual" name="attendance" value="virtual">
+            <label for="virtual">No, virtual</label><br><br>
+        </fieldset>
+
+        <!-- Additional Information Fieldset -->
+        <fieldset>
+            <legend>Additional Information</legend>
+            <label for="tshirt">T-shirt Size:</label>
+            <select id="tshirt" name="tshirt">
+                <option value="">--Select Size--</option>
+                <option value="s">Small</option>
+                <option value="m">Medium</option>
+                <option value="l">Large</option>
+                <option value="xl">X-Large</option>
+            </select><br><br>
+
+            <label for="color">Preferred Color:</label>
+            <input type="color" id="color" name="color" value="#0000ff"><br><br>
+
+            <label for="resume">Upload Resume (PDF):</label>
+            <input type="file" id="resume" name="resume" accept=".pdf"><br><br>
+
+            <label for="special">Special Requests:</label><br>
+            <textarea id="special" name="special" rows="4" cols="40" placeholder="Let us know your needs..."></textarea><br><br>
+
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890"><br><br>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>

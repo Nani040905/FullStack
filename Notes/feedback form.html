@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+    <h1>Day 2 </h1>
+
+    <form>
+        <fieldset>
+            <legend>Name</legend>
+        <label for="firstname">First Name:</label>
+        <input type="text" name="firstname" id="firstname"><br/>
+
+        <label for="lastname">Last Name:</label>
+        <input type="text" name="lastname" id="lastname"><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Info</legend>
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+            <option value="1">Frontend</option>
+            <option value="2">Backend</option>
+            <option value="3">Fullstack</option>
+        </select><br/>
+
+        <label for="skill">Skill to master</label>
+        <select id="skill" name="skill">
+            <optgroup label="Frontend Skills">
+                            <option value="1">HTML</option>
+                            <option value="2">CSS</option>
+                            <option value="3">JavaScript</option>
+                            <option value="4">React</option>
+            </optgroup>
+            <optgroup label="Backend Skills">
+                            <option value="5">Node.js</option>
+                            <option value="6">MongoDB</option>
+                            <option value="7">Express.js</option>
+            </optgroup>
+
+        </select><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Feedback</legend>
+
+        <textarea rows="10" cols="30" name="specialRequest">Special Request....</textarea><br/>
+
+        </fieldset>
+
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+
+    </form>
+</body>
+</html>
+
+
+
